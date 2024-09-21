@@ -7,13 +7,13 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <h1 className="text-6xl mb-6">
-        I'm a software engineer passionate about finding user-focused solutions
-        to technical problems.
+        I&apos;m a software engineer passionate about finding user-focused
+        solutions to technical problems.
       </h1>
       <p className="text-2xl mb-32">
-        I'm currently a freelance software engineer based in Minneapolis, MN. I
+        I am currently a freelance software engineer based in Minneapolis, MN. I
         have experience working with a variety of technologies, including React,
-        TypeScript, and Node.js.
+        TypeScript, Node.js, Ruby on Rails, Postgres and more.
       </p>
 
       <div className="flex list-none gap-6">

@@ -9,17 +9,19 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
 
   return (
     <div>
-      <h1 className="text-lg text-white"> {name}</h1>
-      <p className="text-sm text-white">{blurb}</p>
-      <Image
-        src={image}
-        alt={`${name} image`}
-        style={{
-          width: "100px",
-          height: "100px",
-          cursor: "pointer",
-        }}
-      />
+      <div>
+        <h1 className="text-lg text-white"> {name}</h1>
+        <p className="text-sm text-white">{blurb}</p>
+        <Image
+          src={image}
+          alt={`${name} image`}
+          style={{
+            width: "100px",
+            height: "100px",
+            cursor: "pointer",
+          }}
+        />
+      </div>
     </div>
   );
 };
