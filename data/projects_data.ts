@@ -10,23 +10,23 @@ import waypointsImage from "@/public/images/waypoints.jpg";
 export const projects = [
   {
     id: "1",
-    name: "Geospatial markers",
+    name: "Geospatial Markers",
     description:
       "Individually developed CRUD application for Geospatial points in Mapbox, React, and Rails. This included csv import/export, image upload, and custom map styling.",
     image: waypointsImage,
     link: "https://www.omniafishing.com/map",
     company: "Omnia Fishing",
-    overview: `Waypoints are a collection of geospatial points that are used by anglers to 
+    overview: `<p>Waypoints are a collection of geospatial points that are used by anglers to 
     mark locations of interest. These points can be used to mark fishing spots, hazards, or other points of interest. 
-    Waypoints is an embedded CRUD application that allows users to create, read, update, and delete waypoints. 
-    Like the broader app waypoints is built on it uses React, Mapbox, and Rails. It allows users to drag and drop points, store notes, upload images, 
-    and import and export .gpx files via CSV. Users can also filter waypoints by type, date or lakes and may share waypoints with other users.`,
+    Waypoints is an embedded CRUD application on top of Omnia's richly interactive map.</p> </br>
+    <p>Like the broader app waypoints is built on it uses React, Mapbox, and Rails. It allows users to drag and drop points, store notes, upload images, 
+    and import and export .gpx files via CSV. Users can also filter waypoints by type, date or lakes and may share waypoints with other users.</p>`,
   },
   {
     id: "2",
     name: "Product Detail Page",
     description:
-      "Completed several redesigns and added color-hover preview effect, mobile color picker drawer, media carousel and personalized media based fishing reports.",
+      "Completed two redesigns that, among other things, added color-hover preview effect, mobile color picker drawer, media carousel and personalized media based fishing reports.",
     image: pdp,
     link: "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait",
     company: "Omnia Fishing",
