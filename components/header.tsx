@@ -29,10 +29,10 @@ const Header = () => {
         </div>
         <NavigationMenu className={`hidden md:block`}>
           <NavigationMenuList className="flex space-x-6">
-            <Link href="/info" legacyBehavior passHref>
+            <Link href="/about" legacyBehavior passHref>
               <NavigationMenuItem>
                 <NavigationMenuLink className="text-white hover:underline">
-                  Info
+                  About
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </Link>
