@@ -22,7 +22,7 @@ const ProjectsPage = () => {
                   </Link>
 
                   <figcaption className="h-full flex flex-col">
-                    <h2 className="my-4 text-xl">{project.name}</h2>
+                    <h2 className="my-4 text-2xl uppercase">{project.name}</h2>
                     <p>{project.description}</p>
                     <Link
                       href={`/projects/${project.id}`}

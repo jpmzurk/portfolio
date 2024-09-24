@@ -16,8 +16,8 @@ export default function Home() {
             into user-focused solutions.
           </h1>
           <p className="text-2xl leading-snug w-5/6 text-left font-thin  xl:block">
-            Based in Minneapolis, MN, I have experience working with a variety
-            of tech stacks but mainly with React, TypeScript, Node.js, Postgres.
+            Based in Minneapolis, MN, I have experience working in a variety of
+            tech stacks with a focus on React, TypeScript, Node.js, Postgres.
             Most recently I worked at a startup called Omnia Fishing as a
             software engineer.
           </p>
@@ -40,7 +40,7 @@ export default function Home() {
                   key={project.id}
                   className="flex-0 md:basis-1/2 lg:basis-1/3"
                 >
-                  <figure>
+                  <figure className="h-full flex flex-col">
                     <Link href={`/projects/${project.id}`} passHref>
                       <Image
                         src={project.image}
@@ -51,9 +51,13 @@ export default function Home() {
                     <span className="text-xl mb-4 uppercase font-medium mt-4 block">
                       {project.name}
                     </span>
-                    <figcaption>
+                    <figcaption className="h-full flex flex-col">
                       <p className="my-4">{project.description}</p>
-                      <Link href={`/projects/${project.id}`} passHref>
+                      <Link
+                        href={`/projects/${project.id}`}
+                        passHref
+                        className="mt-auto"
+                      >
                         <Button variant="outline">View Project</Button>
                       </Link>
                     </figcaption>

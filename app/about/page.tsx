@@ -1,5 +1,5 @@
 import { Skills } from "@/app/about/skills";
-import profilePic from "@/public/images/profile_two.jpg";
+import profilePic from "@/public/images/profile-three.jpg";
 import Image from "next/image";
 import { Experience } from "./experience";
 
@@ -17,11 +17,13 @@ const AboutPage = () => {
           <p className="mb-6 text-2xl">
             I enjoy simplicity in whatever I work on, whether that is the
             product or the implementations. I also like iterating to find the
-            best version of a thing and making it stable and easy to use. Aside
-            from the multiverse of strategic approaches to writing code, I've
-            found that communicating clearly, listening with intention,
-            questioning my assumptions, and continually putting myself in the
-            user's shoes are the best ways to impact the <i>most</i> users.
+            best version of a thing and making it stable and easy to use.
+          </p>
+          <p className="mb-6 text-2xl">
+            Aside from the multiverse of strategic approaches to writing
+            maintainable code, I've found that communicating clearly, listening
+            with intention, questioning my assumptions, and continually putting
+            myself in the user's shoes are the best ways to impact users.
           </p>
           <p className="text-2xl">
             I am a person outside of work where I am the singer-songwriter /
