@@ -46,8 +46,7 @@ export const projects: Project[] = [
     image: pdp,
     link: "https://www.omniafishing.com/p/zman-jack-hammer-chatterbait",
     company: "Omnia Fishing",
-    overview: `<p>Like many high traffic pages the PDP saw many careful and modular iterations, of which I led several. One of the most impactful and unique features 
-      was the hover-color preview where a user can hover over a small image and see the hero image change. 
+    overview: `<p>Like many high traffic pages the PDP saw many careful and modular iterations, of which I led several. One of the most impactful was the hover-color preview where a user can hover over a small image and see the hero image change. 
       The challenge was the current color picker was already sluggish, on top of that the code for that section was full of shared component logic and needed to be refactored. 
       I refactored as little as possible while adding the hover effect and focused on memoized the color picker component and its props so the sluggishness evaporated. </p>
       
@@ -73,7 +72,7 @@ export const projects: Project[] = [
     id: "4",
     name: "Home Page",
     description:
-      "Led FE development of multiple iterations for Home Page using A/B testing to determine best performing design.",
+      "Led FE development of several above the fold features on the Home Page using A/B testing to determine best performing designs.",
     image: home,
     link: "https://www.omniafishing.com/",
     company: "Omnia Fishing",
@@ -81,7 +80,7 @@ export const projects: Project[] = [
     The hero section pictured was the most simple of these and used a combo box powered by a search service that allows a user to receive type ahead options to select a lake 
     which directs to the mapping page.  This experience was tested against its predecessor and yielded metrics that were in line with the business goals of the time.</p>
     
-    <p>One challenge on the home page was an authenticated dashboard design with a hero image and an 
+    <p>One challenge on the home page was an authenticated design with a hero and an 
     image preview carousel that operated on x and y axis depending on screen size. I led the research for a new carousel package that was built with flexbox, supported the use of buttons and active indexing, could work on either axis and was as low level as possible. 
     I identified Embla as a suitable choice and was able to easily execute the design. After this work the Emlba carousel was adopted across the site. </p>`,
   },
@@ -121,19 +120,20 @@ export const projects: Project[] = [
   },
   {
     id: "7",
-    name: "Voltyx",
-    description:
-      "Created a custom home page for client using vanilla HTML, CSS, and JS.",
-    image: voltyx,
-    link: "https://www.voltyx.com/",
-    company: "KeenSpace",
+    name: "NexTrip Clone",
+    description: `As a personal project, I cloned the NexTrip web app using React and redux.`,
+    image: nextTripClone,
+    company: "Personal Project",
+    overview: `It is fully responsive and provides users with up-to-date information on bus schedules in the Twin Cities. 
+    The app uses the Metro Transit API to fetch data.  This site is currently not publicly hosted, but I am currently working on a rewrite in NextJs.  The code is available on my github.`,
   },
   {
     id: "8",
-    name: "NexTrip Clone",
+    name: "Voltyx",
     description:
-      "As a personal project, I cloned the NexTrip app using React and redux. Currently working on a rewrite in NextJs. ",
-    image: nextTripClone,
-    company: "Personal Project",
+      "Developed a custom responsive home page for client using HTML, CSS, and JS.",
+    image: voltyx,
+    link: "https://www.voltyx.com/",
+    company: "KeenSpace",
   },
 ];

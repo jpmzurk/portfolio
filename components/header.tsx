@@ -1,4 +1,3 @@
-// components/Header.tsx
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -8,23 +7,32 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { Linkedin, Menu, X } from "lucide-react";
+import { Linkedin, Menu } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import Github from "../public/svgs/github.svg";
+import { Drawer, DrawerContent } from "./ui/drawer";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathName = usePathname();
+
+  useEffect(() => {
+    if (pathName && isOpen) {
+      setIsOpen(false);
+    }
+  }, [pathName]);
 
   return (
-    <header className="fixed top-0 right-0 w-full bg-black p-4 z-100">
+    <header className="fixed top-0 right-0 w-full bg-black p-4 z-100 font-[family-name:var(--font-geist-sans)]">
       <nav className="flex justify-between items-center">
         <div className="text-white text-lg font-bold">
           <Link href="/">Patrick Mazurek</Link>
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden -mr-4">
           <Button variant="ghost" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            <Menu className="w-6 h-6" />
           </Button>
         </div>
         <NavigationMenu className={`hidden md:block`}>
@@ -66,48 +74,47 @@ const Header = () => {
           </NavigationMenuList>
         </NavigationMenu>
       </nav>
-      {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden mt-2">
-          <NavigationMenu>
-            <NavigationMenuList className="flex flex-col space-y-4">
-              <NavigationMenuItem>
-                <Link href="/info" legacyBehavior passHref>
-                  <NavigationMenuLink className="text-white hover:underline">
-                    Info
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link href="/projects" legacyBehavior passHref>
-                  <NavigationMenuLink className="text-white hover:underline">
-                    Projects
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
+        <Drawer
+          open={isOpen}
+          onClose={() => setIsOpen(false)}
+          dismissible
+          direction="right"
+        >
+          <DrawerContent className="bg-black flex flex-col rounded-t-[10px] h-full w-[200px] mt-24 fixed bottom-0 right-0">
+            <div className="flex flex-col p-4 bg-black flex-1 gap-4">
+              <Link
+                href="/about"
+                legacyBehavior
+                passHref
+                className="text-white hover:underline"
+              >
+                About
+              </Link>
+              <Link href="/projects" legacyBehavior passHref>
+                Projects
+              </Link>
               <a
                 href="https://github.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white flex items-center"
+                onClick={() => setIsOpen(false)}
               >
-                <NavigationMenuItem>
-                  <Github className="w-5 h-5 mr-2" /> GitHub
-                </NavigationMenuItem>
+                <Github className="w-5 h-5 mr-2" /> GitHub
               </a>
               <a
                 href="https://linkedin.com/in/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white flex items-center"
+                onClick={() => setIsOpen(false)}
               >
-                <NavigationMenuItem>
-                  <Linkedin className="w-5 h-5 mr-2" /> LinkedIn
-                </NavigationMenuItem>
+                <Linkedin className="w-5 h-5 mr-2" /> LinkedIn
               </a>
-            </NavigationMenuList>
-          </NavigationMenu>
-        </div>
+            </div>
+          </DrawerContent>
+        </Drawer>
       )}
     </header>
   );

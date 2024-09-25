@@ -1,7 +1,7 @@
 export const Skills = () => {
   return (
     <div className="border-b-2 border-white pb-20 mb-20">
-      <p className="text-5xl mb-6">SKILLS</p>
+      <p className="text-5xl mb-6 font-light">SKILLS</p>
       <ul className="skills">
         <li>React</li>
         <li>Next.js</li>

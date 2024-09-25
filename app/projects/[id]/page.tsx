@@ -24,7 +24,7 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
             </div>
             {overview ? (
               <div
-                className="text-2xl leading-[1.35] font-thin flex-shrink-0 basis-1/2 projectOverview"
+                className="text-2xl leading-[1.35] font-light flex-shrink-0 basis-1/2 projectOverview"
                 dangerouslySetInnerHTML={{ __html: overview }}
               />
             ) : (

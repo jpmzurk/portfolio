@@ -1,7 +1,9 @@
 export const Experience = () => {
   return (
     <div className="pb-12 ">
-      <p className="text-white text-5xl mb-6">Experience</p>
+      <p className="text-white text-5xl mb-6 font-light uppercase">
+        Experience
+      </p>
 
       <div className="mt-8">
         <p className="text-2xl font-bold">Omnia Fishing</p>

@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <main className="pt-[68px] md:pt-[60px] px-4 background">
+        <main className="pt-[68px] md:pt-[60px] px-4 background font-[family-name:var(--font-geist-sans)]">
           {children}
         </main>
       </body>
