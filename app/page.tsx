@@ -20,8 +20,9 @@ export default function Home() {
             src={profilePic}
             alt="profile picture"
             className="rounded-md lg:max-w-[400px] aspect-square sm:hidden mb-8"
+            priority
           />
-          <p className="text-2xl leading-snug w-5/6 text-left font-thin  xl:block">
+          <p className="text-2xl leading-snug w-5/6 text-left font-light xl:block">
             Based in Minneapolis, MN, I have experience working in a variety of
             tech stacks with a focus on React, TypeScript, Node.js, Postgres.
             Most recently I worked at a startup called Omnia Fishing as a
