@@ -20,7 +20,7 @@ interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    name: "Waypoints",
+    name: "Waypoints / Map",
     description:
       "Individually developed CRUD application for Geospatial points in Mapbox, React, and Rails. This included csv import/export, image upload, and custom map styling.",
     image: waypointsImage,
@@ -58,18 +58,6 @@ export const projects: Project[] = [
   },
   {
     id: "3",
-    name: "SASS Subscription Page",
-    description:
-      "Created responsive landing page for Omnia Pro subscription service, and an A/B test to examine relationship between page height and subscription starts.",
-    image: pro,
-    link: "https://www.omniafishing.com/pro",
-    company: "Omnia Fishing",
-    overview: `<p>Omnia Pro is a subscription service that offers anglers a curated selection of fishing gear each month. I was tasked with creating a responsive landing page for the service. The page was designed to be simple and easy to navigate, balancing visual story telling and clearly stating 
-    the benefits of the service.</p> <p>  I advocated to create an A/B test to examine the relationship between page height and subscription starts based on different page designs.  The experiment was launched and the results indicated a reasonably clear winner that was shipped after the 
-    pre-determined amount of experiment exposures. </p>`,
-  },
-  {
-    id: "4",
     name: "Home Page",
     description:
       "Led FE development of several above the fold features on the Home Page using A/B testing to determine best performing designs.",
@@ -84,6 +72,19 @@ export const projects: Project[] = [
     image preview carousel that operated on x and y axis depending on screen size. I led the research for a new carousel package that was built with flexbox, supported the use of buttons and active indexing, could work on either axis and was as low level as possible. 
     I identified Embla as a suitable choice and was able to easily execute the design. After this work the Emlba carousel was adopted across the site. </p>`,
   },
+  {
+    id: "4",
+    name: "SASS Subscription Page",
+    description:
+      "Created responsive landing page for Omnia Pro subscription service, and an A/B test to examine relationship between page height and subscription starts.",
+    image: pro,
+    link: "https://www.omniafishing.com/pro",
+    company: "Omnia Fishing",
+    overview: `<p>Omnia Pro is a subscription service that offers anglers a curated selection of fishing gear each month. I was tasked with developing a responsive landing page for the service. The page was designed to be simple and easy to navigate, balancing visual story telling and clearly stating 
+    the benefits of the service.</p> <p>  I advocated to create an A/B test to examine the relationship between page height and subscription starts based on different page designs.  The experiment was launched and the results indicated a reasonably clear winner that was shipped after the 
+    pre-determined amount of experiment exposures. </p>`,
+  },
+
   {
     id: "5",
     name: "Lake Page",

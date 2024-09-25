@@ -4,7 +4,6 @@ export const Skills = () => {
       <p className="text-5xl mb-6 font-light">SKILLS</p>
       <ul className="skills">
         <li>React</li>
-        <li>Next.js</li>
         <li>TypeScript</li>
         <li>Javascript</li>
         <li>HTML</li>

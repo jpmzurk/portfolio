@@ -1,5 +1,7 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { projects } from "../../../data/projects_data";
+import { SquareArrowOutUpRight } from "lucide-react";
 
 const ProjectPage = ({ params }: { params: { id: string } }) => {
   const { id } = params;
@@ -15,12 +17,22 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
           <h1 className="text-6xl mb-16">{name}</h1>
 
           <div className="flex flex-col lg:flex-row lg:gap-10">
-            <div className="w-fit">
-              <Image
-                src={image}
-                alt={`${name} image`}
-                className="cursor-pointer aspect-square rounded-md mb-20 brightness-90 flex-shrink-1 w-full basis-1/2 max-w-[700px]"
-              />
+            <div>
+              <div className="w-fit">
+                <Image
+                  src={image}
+                  alt={`${name} image`}
+                  className="aspect-square mb-8 rounded-md brightness-90 flex-shrink-1 w-full basis-1/2 max-w-[700px]"
+                />
+              </div>
+              {link && (
+                <a href={link} className=" font-medium">
+                  <Button variant="outline" size="lg">
+                    View Live Project{" "}
+                    <SquareArrowOutUpRight className="w-4 ml-2" />
+                  </Button>
+                </a>
+              )}
             </div>
             {overview ? (
               <div
@@ -31,11 +43,6 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
               <p className="text-2xl mb-16 w-2/3">{description}</p>
             )}
           </div>
-          {link && (
-            <a href={link} className="underline text-2xl font-medium">
-              Link to Project
-            </a>
-          )}
         </div>
       </article>
     </div>
