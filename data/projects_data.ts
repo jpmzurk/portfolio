@@ -8,7 +8,7 @@ import voltyx from "@/public/images/voltyx.jpg";
 import waypointsImage from "@/public/images/waypoints.jpg";
 import { StaticImageData } from "next/image";
 
-interface Project {
+export interface Project {
   id: string;
   name: string;
   description: string;
@@ -125,7 +125,7 @@ export const projects: Project[] = [
     description: `As a personal project, I cloned the NexTrip web app using React and redux.`,
     image: nextTripClone,
     company: "Personal Project",
-    overview: `It is fully responsive and provides users with up-to-date information on bus schedules in the Twin Cities. 
+    overview: `This project features a fully responsive layout and provides users with up-to-date information on bus schedules in the Twin Cities. 
     The app uses the Metro Transit API to fetch data.  This site is currently not publicly hosted, but I am currently working on a rewrite in NextJs.  The code is available on my github.`,
   },
   {
