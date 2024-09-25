@@ -12,16 +12,21 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Github from "../public/svgs/github.svg";
-import { Drawer, DrawerContent } from "./ui/drawer";
+import { Drawer, DrawerContent, DrawerTitle } from "./ui/drawer";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathName = usePathname();
 
   useEffect(() => {
-    if (pathName && isOpen) {
+    let firstPathname = "";
+    if (firstPathname !== pathName) {
       setIsOpen(false);
     }
+
+    return () => {
+      firstPathname = pathName;
+    };
   }, [pathName]);
 
   return (
@@ -81,7 +86,11 @@ const Header = () => {
           dismissible
           direction="right"
         >
-          <DrawerContent className="bg-black flex flex-col rounded-t-[10px] h-full w-[200px] mt-24 fixed bottom-0 right-0">
+          <DrawerContent
+            className="bg-black flex flex-col rounded-t-[10px] h-full w-[200px] mt-24 fixed bottom-0 right-0"
+            aria-describedby=""
+          >
+            <DrawerTitle className="hidden">Links</DrawerTitle>
             <div className="flex flex-col p-4 bg-black flex-1 gap-4">
               <Link
                 href="/about"

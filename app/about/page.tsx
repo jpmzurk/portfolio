@@ -21,9 +21,10 @@ const AboutPage = () => {
           </p>
           <p className="mb-6 text-2xl font-light">
             Aside from the multiverse of strategic approaches to writing
-            maintainable code, I've found that communicating clearly, listening
-            with intention, questioning my assumptions, and continually putting
-            myself in the user's shoes are the best ways to impact users.
+            maintainable code, I&apos;ve found that communicating clearly,
+            listening with intention, questioning my assumptions, and
+            continually putting myself in the user&apos;s shoes are the best
+            ways to impact users.
           </p>
           <p className="text-2xl font-light">
             I am a person outside of work where I am the singer-songwriter /
