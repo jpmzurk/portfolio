@@ -14,14 +14,47 @@
   }
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.background {
+  background: linear-gradient(
+    145deg,
+    #000000,
+    #0d0d0d 20%,
+    #1f1f1f,
+    #2a2a2a,
+    #333333,
+    #292929 80%,
+    #6e6e6e 90%,
+    #202020,
+    #1b1b1b,
+    #0d0d0d
+  );
+  height: 100%;
+  min-height: 100dvh;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.skills li {
+  padding: 6px 12px;
+  border-radius: 25px;
+  border: 2px solid #ffffff;
+  font-size: 24px;
+}
+
+.projectOverview p {
+  margin-bottom: 2rem;
 }
