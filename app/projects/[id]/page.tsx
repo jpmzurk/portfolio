@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { SquareArrowOutUpRight } from "lucide-react";
 import Image from "next/image";
 import { projects } from "../../../data/projects_data";
-import { SquareArrowOutUpRight } from "lucide-react";
 
 const ProjectPage = ({ params }: { params: { id: string } }) => {
   const { id } = params;
@@ -12,9 +12,9 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
   return (
     <div>
       <article className="py-14 lg:py-20">
-        <div className="px-20 mx-auto flex flex-col">
+        <div className="max-w-7xl mx-auto flex flex-col">
           <span className="uppercase mb-4 block">{company}</span>
-          <h1 className="text-6xl mb-16">{name}</h1>
+          <h1 className="text-6xl mb-12">{name}</h1>
 
           <div className="flex flex-col lg:flex-row lg:gap-10">
             <div>
@@ -26,7 +26,7 @@ const ProjectPage = ({ params }: { params: { id: string } }) => {
                 />
               </div>
               {link && (
-                <a href={link} className=" font-medium">
+                <a href={link} className="mb-8 font-medium block">
                   <Button variant="outline" size="lg">
                     View Live Project{" "}
                     <SquareArrowOutUpRight className="w-4 ml-2" />
