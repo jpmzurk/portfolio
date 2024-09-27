@@ -24,7 +24,7 @@ const AboutPage = () => {
             maintainable code, I&apos;ve found that communicating clearly,
             listening with intention, questioning my assumptions, and
             continually putting myself in the user&apos;s shoes are the best
-            ways to impact users.
+            ways to make great software.
           </p>
           <p className="text-2xl font-light">
             I am a person outside of work where I am the singer-songwriter /
@@ -43,6 +43,8 @@ const AboutPage = () => {
             src={profilePic}
             alt="profile picture"
             className="rounded-md"
+            priority
+            placeholder="blur"
           />
         </div>
       </div>

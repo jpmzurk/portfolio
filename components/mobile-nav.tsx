@@ -42,7 +42,7 @@ export const MobileNav = () => {
             Projects
           </Link>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/jpmzurk"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white flex items-center"
@@ -51,7 +51,7 @@ export const MobileNav = () => {
             <Github className="w-5 h-5 mr-2" /> GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/patrick-mazurek-6702123b"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white flex items-center"
