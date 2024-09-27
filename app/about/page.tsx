@@ -15,12 +15,7 @@ const AboutPage = () => {
             and modifying API&apos;s when the project calls for it.
           </p>
           <p className="mb-6 text-2xl font-light">
-            I enjoy simplicity in whatever I work on, whether that is the
-            product or the implementations. I also like iterating to find the
-            best version of a thing and making it stable and easy to use.
-          </p>
-          <p className="mb-6 text-2xl font-light">
-            Aside from the multiverse of strategic approaches to writing
+            Aside from the multiverse of strategic approaches to writing clean,
             maintainable code, I&apos;ve found that communicating clearly,
             listening with intention, questioning my assumptions, and
             continually putting myself in the user&apos;s shoes are the best
@@ -45,6 +40,7 @@ const AboutPage = () => {
             className="rounded-md"
             priority
             placeholder="blur"
+            blurDataURL="@/public/images/profile-three-low.jpg"
           />
         </div>
       </div>
