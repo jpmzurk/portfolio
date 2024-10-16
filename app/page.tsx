@@ -11,29 +11,25 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen p-8 pb-20 md:p-12 lg:p-16 sm:mt-10">
       <div className="flex flex-col lg:flex-row border-b-2 border-white pb-4 sm:pb-20 mb-20 gap-8">
-        <div className="basis-2/3 ">
-          <h1 className="text-4xl sm:text-5xl mb-8 font-semibold leading-[1.1]">
-            I&apos;m a developer that enjoys turning complex technical problems
-            into user-focused solutions.
+        <div className="basis-2/3 homeHeading">
+          <h1 className="text-3xl sm:text-4xl mb-8 font-semibold leading-[1.1]">
+            Software Engineer that enjoys transforming technical problems into
+            delightful user experiences.
           </h1>
-          <Image
-            src={profilePic}
-            alt="profile picture"
-            className="rounded-md lg:max-w-[400px] aspect-square sm:hidden mb-8"
-            priority
-          />
           <p className="text-2xl leading-snug w-5/6 text-left font-light xl:block">
-            Based in Minneapolis, MN, I have experience working in a variety of
-            tech stacks with a focus on React, TypeScript, Node.js, Postgres.
-            Most recently I worked at a startup called Omnia Fishing as a
-            software engineer.
+            Based in Minneapolis, MN, I have experience in a variety of tech
+            stacks but focus on React, TypeScript, Node and Postgres. Most
+            recently I worked at a startup called Omnia Fishing as a Front-End
+            engineer.
           </p>
         </div>
-        <div className="mb-4 lg:mb-0 lg:ml-auto">
+        <div className="mb-4 lg:ml-auto lg:mb-0">
           <Image
             src={profilePic}
-            alt="profile picture"
-            className="rounded-md lg:max-w-[400px] aspect-square hidden sm:block"
+            alt="profile picture of the author"
+            className="rounded-md aspect-square max-w-full lg:max-w-[400px]"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 890px) 50vw, 33vw"
           />
         </div>
       </div>

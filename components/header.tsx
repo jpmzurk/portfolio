@@ -13,7 +13,7 @@ import { MobileNav } from "./mobile-nav";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 right-0 w-full bg-black p-4 z-100 font-[family-name:var(--font-geist-sans)]">
+    <header className="fixed top-0 right-0 w-full bg-black p-4 z-100 font-[family-name:var(--font-geist-sans)] z-10">
       <nav className="flex justify-between items-center">
         <div className="text-white text-lg font-bold">
           <Link href="/">Patrick Mazurek</Link>
